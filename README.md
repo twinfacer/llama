@@ -1,4 +1,5 @@
 # Llama
+Project scaffold generator.
 
 ## Installation
 
@@ -19,5 +20,5 @@ Or install it yourself as:
 ## Usage
 
 ```shell
-$ llama -t twinfacer/roda-app new_fancy_app
+$ llama -t twinfacer/template_test new_fancy_app
 ```

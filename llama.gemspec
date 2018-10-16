@@ -11,9 +11,13 @@ Gem::Specification.new do |spec|
   spec.description   = %q{Llama will help you create scaffold project from git repo}
   spec.homepage      = 'https://github.com/twinfacer/llama'
 
-  spec.files         = `git ls-files -z`.split('\x0').reject do |f|
+  spec.files         = `git ls-files -z`.split("\x0").reject do |f|
     f.match(%r{^(test|spec|features)/})
   end
+  spec.executables << 'llama'
+
+  spec.add_dependency 'thor'
+  spec.add_dependency 'colorize'
 
   spec.add_development_dependency 'bundler', '~> 1.13'
   spec.add_development_dependency 'rake', '~> 10.0'
