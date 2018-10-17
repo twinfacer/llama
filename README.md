@@ -1,5 +1,5 @@
 # Llama
-Project scaffold generator. Internaly uses __git__ to grab template and __ERB__ for template rendering.
+Project scaffold generator. Internaly uses __git__ to grab template and __ERB__ for template processing magic.
 
 ![llama](https://static.vecteezy.com/system/resources/previews/000/129/338/non_2x/free-llama-background-vector.jpg)
 
@@ -20,9 +20,9 @@ Or install it yourself as:
     $ gem install llama
 
 ## Usage
-Following command will create directory PROJECT_NAME, clones template_repo to it and process cloned template (as described bellow).
+Following command will create directory __PROJECT_NAME__ in current directory (and fails if it already exists unless __-f,--force__ option provided), clones git repository TEMPLATE to it and process cloned template (as described bellow).
 ```shell
-  llama new PROJECT_NAME -t[, --template=]TEMPLATE
+  llama new PROJECT_NAME -t[, --template=]TEMPLATE [-f,--force=false]
 ```
 Accepts __TEMPLATE__ in form of github __:username/:reponame__ or full repo url.
 
